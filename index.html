@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação do DOM</title>
+</head>
+<body>
+
+    <!-- 📂 Parágrafo -->
+    <p id="meu-paragrafo">Texto original</p>
+
+    <!-- 📂 Botão -->
+    <button id="meu-botao">Clique aqui</button>
+
+    <!-- 📂 JavaScript -->
+    <script>
+        // Selecionando elementos do DOM
+        const paragrafo = document.getElementById("meu-paragrafo");
+        const botao = document.getElementById("meu-botao");
+
+        // Adicionando evento de clique ao botão
+        botao.addEventListener("click", function() {
+            paragrafo.textContent = "Texto alterado!"; // altera o texto do parágrafo
+        });
+    </script>
+
+</body>
+</html>
